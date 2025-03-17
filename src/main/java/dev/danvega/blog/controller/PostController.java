@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "*") // Allow all origins (or specify your frontend URL)
 @RestController
 @RequestMapping("/api/posts")
 public class PostController {
